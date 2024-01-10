@@ -1,0 +1,216 @@
+#e3d1f5
+#ccb4fe
+#d7c3fa
+#e9e0ef
+#e5ebdb
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+
+    
+}
+body{   
+    background-image:radial-gradient(circle,#e0aaff, #3c096c);
+}
+
+header{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    margin-left: 5%;
+    color: white;
+
+}
+
+header>#title>h1{
+    margin-bottom: 0;
+}
+
+header>#title>.name{
+    padding: 0 16%;
+}
+
+.vl{
+    border-left: 1.5px solid white;
+    height: 80%;   
+    position:absolute;
+    right: 10%;
+    margin-top: 10vh;
+    bottom: 0;
+}
+
+.vl>.year1{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg) ;
+    -o-transform: rotate(90deg) ;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg) ;
+    position: absolute;
+    top: -30px;
+    left: -16px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#infinity>img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -46px;
+    left: -25px;
+    
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 5%;
+    width: 70%;
+    height: 10vh; /* Ou outro valor conforme necessário */
+    
+    
+}
+
+#footer>p {
+    margin-bottom: 2%;
+    margin-top: 2%; /* Ou outro valor conforme necessário */
+    border-top: 1px solid white;
+    width: 8em;
+    padding-top: 1%;
+    position: absolute;
+    color: white;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Agora estamos centralizando verticalmente */
+    height: 80vh; /* Mantém a altura total da viewport */
+}
+
+.item {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    padding: 2%;
+    margin: 2%;
+    background-image:radial-gradient(circle,#9d4edd, #e0aaff);
+    border: 0.5px solid #b494c4;
+    transition: filter 0.3s;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+
+.item:hover{
+
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));   
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    height: 72vh;
+    width: 50vw;
+    background-color: #300057;
+    margin: auto;
+    border: 0.2px solid #000000;
+    border-radius: 2%;
+    transition: opacity 0.5s;
+    color: white;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    padding: 1%;
+    height: auto;
+    max-width: 50vw;
+    position: relative;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    margin-bottom:10% ;
+    
+    
+}
+#sectionAboutMe.active {
+    opacity: 1;
+}
+
+
+#photo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Adiciona z-index para controlar a sobreposição */
+    display: flex;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    max-width: 98%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#photo > img {
+    width: calc(33.33% - 10px);
+    border-radius: 5%;
+    padding: 2px;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    #photo > img {
+        width: calc(50% - 10px); /* Em telas menores, exibe duas imagens por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    #photo > img {
+        width: 100%; /* Em telas muito pequenas, exibe uma imagem por linha */
+    }
+}
+
+#closeSection{
+    background-color:#300057;
+    color: white;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    border: none;
+
+}
+
+#closeSection:hover{
+    filter: drop-shadow(5px 5px 10px rgba(246, 142, 255, 0.5));
+}
+/**.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    height: 70vh; 
+    width: 40vw;
+    margin-top: 2%;
+    background-color: #300057;
+    margin: auto;
+    border: 0.2px solid #000000  ;
+    border-radius: 2%;
+    transition: filter 0.3s;
+    color: white;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    padding: 1%;
+}
+
+#photo>img{
+    width: 180px;
+    height: 180px;
+}
+
