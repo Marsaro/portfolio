@@ -103,6 +103,7 @@ header>#title>.name{
     margin: 2%;
     background-image:radial-gradient(circle,#9d4edd, #e0aaff);
     border: 0.5px solid #b494c4;
+    border-radius: 5%;
     transition: filter 0.3s;
     color: white;
     font-weight: bold;
@@ -213,4 +214,21 @@ header>#title>.name{
     width: 180px;
     height: 180px;
 }
-
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 90%; /* Ajusta a largura para ocupar toda a largura da tela */
+        max-width: 100%; /* Remove a largura máxima para ocupar toda a tela */
+        height: calc(100vh - 60px); /* Ajusta a altura para ocupar o restante da tela, subtraindo a altura do cabeçalho (por exemplo, 60px) */
+        font-size: 12px;
+        margin: 10 10 10 10;
+        padding: 10px;
+        margin-top: 10px;
+    
+    }
+    .vl{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+}
