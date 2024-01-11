@@ -192,11 +192,6 @@ header>#title>.name{
 #closeSection:hover{
     filter: drop-shadow(5px 5px 10px rgba(246, 142, 255, 0.5));
 }
-
-#photo>img{
-    width: 180px;
-    height: 180px;
-}
 @media only screen and (max-width: 767px) {
     .section {
         width: 90%; /* Ajusta a largura para ocupar toda a largura da tela */
